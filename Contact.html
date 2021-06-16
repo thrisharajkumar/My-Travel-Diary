@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML FORMS - PRACTICE PROBLEM</title>
+        <style>
+            body{
+                background-color: rgb(240, 240, 240);;
+                margin: 0;
+            }
+
+            #NavBar {
+                background-color: rgb(3, 3, 143);
+                margin-top: 0;
+                float: top;
+                padding: 24px;
+                text-align: center;
+                color: white;
+            }
+
+            .Menu-item {
+                padding:24px;
+                font-size: 16px;
+            }
+
+            .link{
+                color: white;
+            }
+
+            #Contact_form {
+                width: 700px;
+                margin-left: auto;
+                text-align: center;
+                margin-right: auto;
+                background-color:white;
+                border: 1px solid  #ccc;
+            }
+
+            #input-wrapper {
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 80px;
+                padding-right:80px;
+            }
+
+            .input-box{
+                font-size: 18px;
+                padding-bottom: 12px;
+                margin-bottom: 36px;
+                border: 0;
+                border-bottom: 1px solid #ccc;
+                width: 100%;
+                
+            }
+
+            .submit {
+                background-color: rgb(3, 3, 143);
+                padding-top: 12px;
+                padding-bottom:12px;
+                padding-left: 24px;
+                padding-right: 24px;
+                font-size: 18px;
+                color: white;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="NavBar">
+            <span class="Menu-item"><a class="link" href="/My_Travel_Diary.html">TRIPS</a></span>
+            <span class="Menu-item"><a class="link" href="/About_me.html">ABOUT</a></span>
+            <span class="Menu-item"><a class="link" href="/Contact.html">CONTACT</a></span>
+        </div>
+        <h1 style="text-align: center; padding-top: 50px;">Wanna Come on my next Trip? Contact Me! </h1>
+        <form id="Contact_form" method="POST">
+            <div id="input-wrapper">
+                <div>
+                <input class="input-box" type="text" name="name" placeholder="Full Name" 
+                required>
+                </div>
+            
+            
+                <div><input class="input-box" type="email" name="email" placeholder="Email" 
+                required>
+                </div>
+
+                <div><input class="input-box" type="tel" name="tel" placeholder="Contact Number" 
+                    required >
+                </div>
+                
+                
+                 <div style="text-align: center;">
+                    <input type="submit" value="Submit" class=" submit" >
+                </div>
+        </form>
+    </body>
+</html>
